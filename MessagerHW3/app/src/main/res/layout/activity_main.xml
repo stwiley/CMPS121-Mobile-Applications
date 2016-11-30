@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.stw.messageapp.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Enter your Nickname!"
+        android:id="@+id/NickText"
+        android:layout_above="@+id/nickEnter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="72dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nickEnter"
+        android:width="200dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Chat"
+        android:id="@+id/chatButton"
+        android:onClick="onClick"
+        android:layout_marginRight="53dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/nickEnter"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="toggle Location"
+        android:id="@+id/toggleButton"
+        android:onClick="toggleLocation"
+        android:layout_alignTop="@+id/chatButton"
+        android:layout_toLeftOf="@+id/chatButton"
+        android:layout_toStartOf="@+id/chatButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text= "Please give the app a few moments to get the location. The button will not activate until both a location and nickname are found. This may take awhile. If it seems to be hanging, try disabling and re-enabling the location."
+        android:layout_below="@+id/chatButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text= "Please try posting multiple messages from both the web browser and the app. Labelling does not work correctly."
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

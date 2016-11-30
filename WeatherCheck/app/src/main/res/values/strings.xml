@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">WeatherCheck</string>
+    <string name="wButton">Get Weather Conditions</string>
+    <string name="city">City: </string>
+    <string name="elevation">Elevation: </string>
+    <string name="temperature">Temperature: </string>
+    <string name="humidity">Humidity: </string>
+    <string name="wind">Wind(Average + gusts mph): </string>
+    <string name="weather">Weather: </string>
+    <string name="windchill">Wind Chill: </string>
+    <string name="pressure">Pressure: </string>
+</resources>
